@@ -1,0 +1,179 @@
+/* ===== General Styling ===== */
+body {
+    background-color: #f5f5f5;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.order-list.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.order-list h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0a087e;
+    text-align: center;
+}
+
+.order-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.order-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.order-card p {
+    margin: 4px 0;
+    color: #555;
+    font-size: 15px;
+}
+
+/* ===== Table Styling ===== */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.table th {
+    background-color: #e0f0ff;
+    font-weight: 600;
+    color: #555;
+}
+
+.table td {
+    background-color: #fffdfc;
+}
+
+/* ===== Order Actions (Button Area) ===== */
+.order-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.order-actions form,
+.order-actions a {
+    display: inline-block;
+}
+
+.order-actions a {
+    min-width: 150px;
+    height: 48px;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    color: white;
+    background-color: #4cce4a; /* Ungu untuk beza */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    line-height: 1;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.order-actions a:hover {
+    background-color: #5a379f;
+}
+/* ===== Unified Button Style ===== */
+.action-button {
+    min-width: 150px;
+    height: 48px;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;       /* ✅ Center text vertically */
+    justify-content: center;   /* ✅ Center text horizontally */
+    vertical-align: middle;    /* ✅ Help inline element align properly */
+    text-align: center;
+    text-decoration: none;
+    line-height: 1;            /* ✅ Avoid line spacing issue */
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+    line-height: normal !important;
+    }
+
+
+
+.cancel-button {
+    background-color: #ff6666;
+}
+
+.btn-return {
+    background-color: #2196F3;
+}
+
+.btn-feedback {
+    background-color: #4CAF50;
+}
+
+.btn-feedback,
+.btn-return {
+    padding: 0;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.action-button span {
+    display: inline-block;
+    line-height: 1;
+}
+
+
+/* ===== Horizontal Line ===== */
+hr {
+    margin-top: 25px;
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 600px) {
+    .order-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .action-button {
+        width: 100%;
+    }
+}
+

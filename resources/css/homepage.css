@@ -1,0 +1,228 @@
+/* === General Styles === */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* === Header === */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#ffffff;
+    padding: 1rem 2rem;
+    color: #89aaf1;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.4rem;
+    width: 200px;
+}
+
+.search-bar button {
+    background-color: #ffffff;
+    color: #89aaf1;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.icons a {
+    color: #89aaf1;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+/* === Category Nav === */
+/* === Category Nav === */
+.category-nav {
+    background-color: #c9e3fa;
+    padding: 0.8rem 2rem;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.category-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+}
+
+.category-nav ul li a {
+    background-color: transparent;
+    color: #357ab7;
+    font-weight: 600;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.4rem;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+}
+
+.category-nav ul li a:hover {
+    background-color: #f0f8ff;
+}
+
+
+/* === Product Section === */
+.product-list {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.product-card h3 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: #000000;
+}
+
+.product-card p {
+    color: #000000;
+    font-weight: bold;
+}
+
+.product-card button {
+    margin-top: 0.5rem;
+    background-color: #357ab7;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.product-card button:hover {
+    background-color: #2f639d;
+}
+
+/* === Footer === */
+.footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.footer-section h4 {
+    margin-bottom: 0.5rem;
+}
+
+.footer-logo {
+    width: 120px;
+    margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.category-nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* biar dia turun ke bawah kalau ruang tak cukup */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.category-nav li {
+  flex: 1 1 auto;
+  text-align: center;
+  margin: 5px; /* bagi ruang sikit antara item */
+}
+
+.category-nav a {
+  display: block;
+  padding: 10px 12px;
+  background-color: #f0f0f0;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.site-header, .site-footer {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 20px 0;
+}
+
+.main-content {
+    padding: 20px;
+}

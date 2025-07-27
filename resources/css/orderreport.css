@@ -1,0 +1,105 @@
+body {
+    background: #f0f8ff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Back Button */
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 8px 14px;
+    background-color: #357ab7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease-in-out;
+    z-index: 100;
+}
+
+.back-button:hover {
+    background-color: #285a8c;
+}
+
+/* Main Content */
+.main-content {
+    width: 90%;
+    max-width: 900px;
+    margin: 80px auto 40px auto; /* Push down because of fixed button */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.main-content h2 {
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Table */
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+.order-table th,
+.order-table td {
+    border: 1px solid #e3eafc;
+    padding: 10px;
+    text-align: left;
+}
+
+.order-table th {
+    background-color: #e0f0ff;
+    color: #000000;
+    font-weight: bold;
+}
+
+.order-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.order-table tr:hover td {
+    background: #f0f8ff;
+}
+
+/* Product List */
+.order-table td ul {
+    padding-left: 20px;
+    margin: 0;
+    text-align: left;
+}
+
+.order-table td ul li {
+    list-style: disc;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-content {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .order-table th, .order-table td {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    .back-button {
+        top: 10px;
+        left: 10px;
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}

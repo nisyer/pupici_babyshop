@@ -1,0 +1,141 @@
+.cart-container {
+    justify-content: center;
+    align-items: flex-start;
+    background: transparent;
+    padding-top: 2rem;
+    display: flex;
+}
+
+.cart-card {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.checkout-form {
+    flex: 2 1 340px;
+    min-width: 320px;
+    max-width: 60%;
+}
+
+.checkout-form h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    margin-top: 0.3rem;
+}
+
+.checkout-btn {
+    width: 100%;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.order-summary {
+    flex: 1 1 260px;
+    min-width: 260px;
+    max-width: 340px;
+    background: #faf9f6;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 2px 12px rgba(52,152,219,0.07);
+    align-self: flex-start;
+}
+
+.order-summary h3 {
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 1.2rem;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.order-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #f8f8f8;
+}
+
+.item-name {
+    font-weight: 500;
+    color: #444;
+}
+
+.item-qty {
+    color: #888;
+    font-size: 0.95rem;
+}
+
+.item-price {
+    margin-left: auto;
+    font-weight: 500;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1.2rem;
+}
+
+.alert-success-message {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin: 20px;
+    font-weight: 500;
+}
+
+.alert-error-message {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin: 20px;
+    font-weight: 500;
+}
+

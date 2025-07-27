@@ -1,0 +1,113 @@
+/* resources/css/registerstaff.css */
+body {
+    background: #f0f8ff;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.register-container {
+    max-width: 500px;
+    margin: 2.5rem auto;
+    background: #fff;
+    padding: 2rem 2.2rem 1.5rem 2.2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(52, 122, 183, 0.10), 0 1.5px 8px rgba(52,152,219,0.08);
+}
+
+.register-container h2 {
+    color: #357ab7;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.register-container input[type="text"],
+.register-container input[type="password"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.7rem;
+    font-size: 1.05rem;
+    border: 1.5px solid #e3eafc;
+    border-radius: 0.5rem;
+    background: #f8fbff;
+    transition: border 0.2s, box-shadow 0.2s;
+    margin-bottom: 1rem;
+}
+
+.register-container input[type="text"]:focus,
+.register-container input[type="password"]:focus {
+    border: 1.5px solid #357ab7;
+    outline: none;
+    box-shadow: 0 0 0 2px #e3eafc;
+    background: #fff;
+}
+
+.register-container button {
+    display: inline-block;
+    background: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
+    color: #357ab7;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 0.8rem 2.2rem;
+    margin-top: 0.7rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(52,152,219,0.08);
+}
+
+.register-container button:hover {
+    background: linear-gradient(90deg, #c2e9fb 0%, #a1c4fd 100%);
+    color: #1a4e7a;
+    transform: translateY(-2px);
+}
+
+.back-button {
+    display: inline-block;
+    background: linear-gradient(90deg, #c2e9fb 0%, #a1c4fd 100%);
+    color: #1a4e7a;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 0.8rem 2.2rem;
+    margin: 1rem 0 1rem 5%;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(52,152,219,0.08);
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
+    color: #357ab7;
+    transform: translateY(-2px);
+}
+
+form input,
+form select,
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+form button {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    opacity: 0.9;
+}
+

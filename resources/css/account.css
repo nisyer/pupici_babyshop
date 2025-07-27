@@ -1,0 +1,92 @@
+
+
+/* Fokus styling hanya untuk bahagian .account-container */
+.account-container {
+    padding: 2rem;
+    background-color: #f0f8ff;
+}
+
+/* Container utama form */
+.account-container .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+/* Tajuk */
+.account-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+/* Notis success */
+.alert.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid #28a745;
+    border-radius: 5px;
+}
+
+/* Gaya untuk form */
+.account-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* jarak antara setiap form group */
+}
+
+/* Label */
+.account-container form label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input dan textarea */
+.account-container form input[type="text"],
+.account-container form input[type="email"],
+.account-container form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Textarea khas */
+.account-container form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Button submit */
+.account-container button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.account-container button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Pastikan semua element ikut box-sizing border-box */
+.account-container *,
+.account-container *::before,
+.account-container *::after {
+    box-sizing: border-box;
+}

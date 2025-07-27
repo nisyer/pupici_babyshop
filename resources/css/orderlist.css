@@ -1,0 +1,110 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+/* CENTER KAN MAIN CONTENT */
+.main-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* CENTER TAJUK ORDER LIST */
+.order-list-title {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+/* TABLE STYLING */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.order-table th{
+  background:#e0f0ff;  
+}
+
+.order-table th,
+.order-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.status-select {
+    padding: 0.4rem 0.6rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.status-form {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* ruang antara dropdown dan button */
+}
+
+.status-update-button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #357ab7;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.status-update-button:hover {
+    background-color: #285d91;
+}
+
+/* BACK BUTTON STYLING */
+a.back-button {
+    display: inline-block;
+    margin: 20px;
+    padding: 8px 16px;
+    background-color: #357ab7;
+    color: #333;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #c5c5c5;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .main-content {
+        padding: 1rem;
+    }
+
+    .order-table th,
+    .order-table td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .status-update-button,
+    .status-select {
+        font-size: 0.9rem;
+    }
+
+
+
+}

@@ -1,0 +1,132 @@
+body {
+    background-color: #f0f8ff;  /* soft baby blueish white */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.login-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid #f8fcff;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    width: 350px;
+}
+
+.login-container h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #3498db;
+}
+
+.login-container label {
+    margin-top: 1rem;
+    display: block;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid #3498db;
+    border-radius: 0.5rem;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,123,255,0.2);
+}
+
+.login-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.register-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 0.5rem;
+}
+
+.register-btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: linear-gradie
+}
+
+.forgot-password-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.forgot-password-link:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.back-to-login-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.back-to-login-link:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Consistent back button style */
+.back-button {
+    display: inline-block;
+    background: linear-gradient(90deg, #c2e9fb 0%, #a1c4fd 100%);
+    color: #1a4e7a;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 0.8rem 2.2rem;
+    margin: 1rem 0 1rem 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(52,152,219,0.08);
+    text-decoration: none;
+    text-align: center;
+}
+
+.back-button:hover {
+    background: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
+    color: #357ab7;
+    transform: translateY(-2px);
+}
+
+.back-button.top-left {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    margin: 0;
+    z-index: 10;
+}

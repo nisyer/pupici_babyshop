@@ -1,0 +1,123 @@
+/* ===== General Styles ===== */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* ===== Back Button ===== */
+.back-button {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 16px;
+    background-color: #357ab7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* ===== Main Content ===== */
+.main-content {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.order-list-title {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* ===== Table Styles ===== */
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.order-table thead {
+    background-color: #e0f0ff;
+    color: rgb(0, 0, 0);
+}
+
+.order-table th,
+.order-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* ===== Dropdown Styles ===== */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.dropdown-button:hover {
+    background-color: #218838;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 120px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 100;
+    margin-top: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-item {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    background: none;
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+}
+
+.dropdown-item.approve {
+    color: #28a745;
+}
+
+.dropdown-item.reject {
+    color: #dc3545;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}

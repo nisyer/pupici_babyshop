@@ -1,0 +1,77 @@
+body {
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.register-title {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.register-container label {
+  display: block;
+  text-align: left;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.register-container input,
+.register-container textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.register-container button {
+  width: 100%;
+  margin-top: 1.5rem;
+  background-color: #007bff;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.register-container button:hover {
+  background-color: #0056b3;
+}
+
+.login-section {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.login-section a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-section a:hover {
+  text-decoration: underline;
+}

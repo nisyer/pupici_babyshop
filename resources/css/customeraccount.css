@@ -1,0 +1,198 @@
+body {
+  background-color: #f0f8ff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  color: #3d372c;
+}
+
+main {
+  background: #f0f8ff;
+  min-height: 100vh;
+}
+
+/* Account container for centering and debug */
+.account-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.container {
+  background: #fff;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(60, 60, 60, 0.07);
+  border: 1px solid #ece7df;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h2 {
+  color: #3d372c;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+
+label {
+  font-weight: 400;
+  color: #3d372c;
+  margin-bottom: 0.4rem;
+  display: block;
+  font-size: 1.08rem;
+}
+
+/* Input group styling */
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.form-input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border: 1px solid #ece7df;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: #fcf6ee;
+  color: #3d372c;
+  transition: border 0.2s;
+  width: 100%;
+}
+
+.form-input:focus {
+  border-color: #b8a98f;
+  outline: none;
+  background: #fff;
+}
+
+.form-input[readonly] {
+  background: #f5f2ed;
+  color: #a89c8a;
+  cursor: not-allowed;
+}
+
+/* Edit button styling */
+.edit-btn {
+  background: #ece7df;
+  color: #3d372c;
+  border: none;
+  padding: 0.6rem 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  min-width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  height: 38px;
+}
+
+.edit-btn:hover {
+  background: #b8a98f;
+  color: #fff;
+}
+
+.edit-btn.editing {
+  background: #b8a98f;
+  color: #fff;
+}
+
+/* Save button styling */
+.save-btn {
+  background: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
+  color: #357ab7;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 1.2rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  display: block !important;
+  letter-spacing: 1px;
+}
+
+.save-btn:hover {
+  background: linear-gradient(90deg, #c2e9fb 0%, #a1c4fd 100%);
+  color: #1a4e7a;
+  transform: translateY(-2px);
+}
+
+/* Success message styling */
+.alert-success {
+  background: #e6f9e6;
+  color: #218838;
+  border: 1px solid #b2e6b2;
+  border-radius: 4px;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+/* Error message styling */
+.alert-error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .account-container {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .container {
+    max-width: 98vw;
+    padding: 1.2rem 0.5rem;
+  }
+  .container h2 {
+    font-size: 1.3rem;
+  }
+  .form-group {
+    margin-bottom: 0.7rem;
+  }
+  .input-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .edit-btn {
+    align-self: flex-end;
+    margin-top: 0.5rem;
+    height: 36px;
+  }
+}
+
