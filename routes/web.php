@@ -86,8 +86,6 @@ Route::get('/order-report/view', [SellerOrderController::class, 'viewOrderReport
 // View feedback
 Route::get('/staff/feedback', fn () => view('seller.feedback'))->name('feedback.index');
 
-// Logout
-Route::get('/logout', [SellerAuthController::class, 'logout'])->name('seller.logout');
 
 
 // -------------------------------
@@ -162,9 +160,9 @@ Route::post('/customer/reset-password', [CustomerAuthController::class, 'resetPa
 // -------------------------------
 // CUSTOMER OTHER
 // -------------------------------
-Route::get('/customer/home', [CustomerAuthController::class, 'home'])->name('customer.home');
+//Route::get('/customer/home', [CustomerAuthController::class, 'home'])->name('customer.home');
 Route::get('/cart', fn () => view('customer.cart'))->name('customer.cart');
-Route::get('/customer/home', [CustomerHomeController::class, 'home'])->name('customer.home');
+
 
 Route::get('/product/{id}', [CustomerHomeController::class, 'viewProduct'])->name('product.view');
 Route::get('/product/{id}', [CustomerHomeController::class, 'showProduct'])->name('product.show');
