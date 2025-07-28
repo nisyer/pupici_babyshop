@@ -172,7 +172,7 @@ Route::get('/home', [CustomerHomeController::class, 'home'])->name('customer.hom
 // -------------------------------
 // LOGIN CHOICE
 // -------------------------------
-Route::get('/login-choice', fn () => view('login-choice'))->name('login.choice');
+Route::get('/', [SellerAuthController::class, 'showLoginChoice'])->name('login.choice');
 
 Route::get('/customer/cart', [CartController::class, 'viewCart'])->name('customer.cart.view');
 

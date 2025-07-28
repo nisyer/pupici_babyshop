@@ -165,5 +165,9 @@ public function updateAccount(Request $request)
     return redirect()->route('seller.dashboard')->with('success', 'Account updated successfully.');
 }
 
+public function showLoginChoice()
+{
+    return view('login-choice');
+}
 }
 
